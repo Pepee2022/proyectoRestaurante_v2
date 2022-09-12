@@ -1,14 +1,90 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Almuerzot</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estiloA.css">
 </head>
 <body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">La sazón de Mónica</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      MENUS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Desayuno</a></li>
+                      <li><a class="dropdown-item" href="almuerzo.html">Almuerzo</a></li>
+                      <li><a class="dropdown-item" href="cena.html">Cena</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reservaciones.html">Reservas</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+    </div>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/comedor.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/comida1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/ceviche.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     <header>
         <div class="ti">
             <br><br><br><br>
@@ -20,31 +96,37 @@
                         <h5>Visítanos hoy y disfruta de una de nuestras deliciosas y abundantes opciones de almuerzo</h5>
                     </div>
                 </div>
-            </div>  
+            </div>
         </div>
     </header>
     <main class="container">
         <section class="row">
             <article class="col caja1">
                 <div>
-                    <p class="row align-items-center"><img src="img/platillo1(1).jpg"></p>
+                    <p class="row align-items-center"><img src="img/platillo1.jpg"></p>
                 </div>
             </article>
             <article class="col caja2">
-                <br><br><br><br><br>
+                <br><br>
                 <div class="row">
                     <h4>lomo Saltado</h4>
                     <p>Jarra de chicha Morada</p>
-                    <p>S/39.90 <span class="u-pull-right">S/30.90</span></p>
+                    <div class="descuento">
+                        <p>S/39.90</p>
+                    </div>  
+                    <span class="u-pull-right">S/30.90</span>
                 </div>
             </article>
         </section>
         <section class="row">
             <article class="col caja2">
-                <br><br><br><br><br>
+                <br><br>
                 <h4>Ceviche</h4>
                 <p>Inkacola 1/2Lr</p>
-                <p>S/24.90 <span class="u-pull-right">S/20.90</span></p> 
+                <div class="descuento">
+                    <p>S/24.90</p>
+                </div>  
+                <span class="u-pull-right">S/20.90</span> 
             </article>
             <article class="col caja1">
                 <div>
@@ -57,18 +139,24 @@
                 <p class="row align-items-center"><img src="img/platillo3.jpg"></p>
             </article>
             <article class="col caja2">
-                <br><br><br><br><br>
+                <br><br>
                 <h4>Tacacho con Cecina</h4>
                 <p>Jarra de limonada</p>
-                <p>S/35.90 <span class="u-pull-right">S/30.90</span></p>  
+                <div class="descuento">
+                    <p>S/35.90</p>
+                </div>  
+                <span class="u-pull-right">S/30.90</span>  
             </article>
         </section>
         <section class="row">
             <article class="col caja2">
-                <br><br><br><br><br>
+                <br><br>
                 <h4>Aji de Gallina</h4>
                 <p>CocaCola 2Lr</p>
-                <p>S/37.90 <span class="u-pull-right">S/30.90</span></p>  
+                <div class="descuento">
+                    <p>S/37.90</p>
+                </div>  
+                <span class="u-pull-right">S/30.90</span> 
             </article>
             <article class="col caja1">
                 <p class="row align-items-center"><img src="img/platillo5.jpg"></p>
@@ -87,82 +175,51 @@
                 <article class="col caja3">
                     <h2>APERITIVOS</h2>
                     <br>
-                    <h5>LOMO SALTADO</h5>
+                    <h5>LOMO SALTADO 30$</h5>
                     <p>Papa peruana, arroz, tomate y cebolla.</p>
                     <br>
-                    <h5>CEVICHE</h5>
+                    <h5>CEVICHE 20$</h5>
                     <p>Pez(preferencial), Camote, Mote, Tostado</p>
                     <br>
-                    <h5>TACACHO CON CECINA</h5>
+                    <h5>TACACHO CON CECINA 30$</h5>
                     <p>Planato verde, Chorizo, Chicharron, Cecina de cerdo.</p>
                     <br>
-                    <h5>AJI DE GALLINA</h5>
+                    <h5>AJI DE GALLINA 30$</h5>
                     <p>Gallina, Aji amarillo, arroz, aceituna y huevo.</p>
                     <br>
-                    <h5>ADOBO DE CHANCHO</h5>
+                    <h5>ADOBO DE CHANCHO 30$</h5>
                     <p>Cerdo, Aji panca, Cebolla, Canela, Rocoto.</p>
                     <br>
-                    <h5>SOPA DE TORTILLA</h5>
+                    <h5>SOPA DE TORTILLA 25$</h5>
                     <p>Con aguacate, tiritas de tortilla, pollo y queso.</p>
                     <br>
-                </article>
-                <article class="col caja2">
-                    <br><br><br>
-                    <h4>30$</h4>
-                    <br><br><br>
-                    <h4>20$</h4>
-                    <br><br><br>
-                    <h4>30$</h4>
-                    <br><br><br>
-                    <h4>30$</h4>
-                    <br><br><br>
-                    <h4>34$</h4>
-                    <br><br><br>
-                    <h4>25$</h4>
                 </article>
                 <article class="col  caja3">
                     <h2>ENSALADAS</h2>
                     <br>
-                    <h5>VÍA ENSALADA DE JARDÍN REAL</h5>
+                    <h5>VÍA ENSALADA DE JARDÍN REAL 10$</h5>
                     <br>
-                    <h5>ENSALADA CÉSAR DE POLLO</h5>
+                    <h5>ENSALADA CÉSAR DE POLLO 10$</h5>
                     <p>Pollo a la parrilla y lechuga romana servido con queso parmesano añejo y tiras de tortilla de ajo.</p>
                     <br>
-                    <h5>ENSALADA DE ESPINACA</h5>
+                    <h5>ENSALADA DE ESPINACA 10$</h5>
                     <p>Espinacas baby, champiñones, pimientos rojos, cebollas rojas, fresas y queso parmesano, con vinagreta balsámica..</p>
                     <br>
-                    <h5>ENSALADA DE MEDALLÓN DE SOLOMILLO</h5>
+                    <h5>ENSALADA DE MEDALLÓN DE SOLOMILLO 10$</h5>
                     <p>Tres medallones de lomo de res, espinacas baby, pimientos rojos, cebollas rojas, fresas, champiñones, queso parmesano y vinagreta balsámica.</p> 
                     <br><br>
                     <h2>ENTRADAS</h2>
                     <br>
-                    <h5>TEQUEÑOS</h5>
+                    <h5>TEQUEÑOS 10$</h5>
                     <p>Pasta Wantan, Queso, Salchicha y guacamole.</p> 
                     <br>
-                    <h5>YUCAS FRITAS</h5>
+                    <h5>YUCAS FRITAS 10$</h5>
                     <p>Junto con una salsa de ajo</p> 
                     <br>
-                    <h5>CAMARONES FRITOS</h5>
-                </article>
-                <article class="col caja2">
-                    <br><br><br>
-                    <h4>10$</h4>
-                    <br><br><br>
-                    <h4>10$</h4>
-                    <br><br><br><br>
-                    <h4>10$</h4>
-                    <br><br><br><br><br>
-                    <h4>10$</h4>
-                    <br><br><br><br><br><br><br><br><br>
-                    <h4>10$</h4>
-                    <br><br><br>
-                    <h4>10$</h4>
-                    <br><br>
-                    <h4>10$</h4>
+                    <h5>CAMARONES FRITOS 10$</h5>
                 </article>
             </div>
         </section>
-        <br><br>
         <section >
             <article class="col caja4">
                 <h2 class="separador">LLEVA NUESTRO MENU CONTIGO</h2>
@@ -170,8 +227,109 @@
             </article>
         </section>
     </main>
-    <footer >
-    </footer>
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <div class="row mt-5"></div>
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Nuestras Redes Sociales:</span>
+          </div>
+          <!-- Left -->
+      
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h3 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>La Sazón de Mónica
+                </h3>
+              </div >
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  MENUS
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Desayuno</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Almuerzo</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Cenas</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Reservas
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Fiesta Infantil</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Matrimonios</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Evento Familiar</a>
+                </p>
+
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contáctanos</h6>
+                <p><i class="fas fa-home me-3"></i> Av. Mariscal Cáceres 121-A Cusco, Perú</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  LaSazonDeMonica@gmail.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> 084-999999</p>
+                <p><i class="fas fa-mobile me-3"></i> +51 958-996632</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2021 Copyright:
+          <a class="text-reset fw-bold" href="index.html">La Sazón de Mónica</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
